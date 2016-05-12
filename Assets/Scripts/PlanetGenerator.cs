@@ -13,7 +13,7 @@ public class PlanetGenerator : MonoBehaviour {
     void SpawnPlanet()
     {
         planetvector = new Vector3(Random.Range(12, 15), Random.Range(-x, x), 0);
-        int rand= Random.Range(1, 4);
+        int rand= Random.Range(1, 6);
         switch (rand)
         {
             case 1:
@@ -26,8 +26,10 @@ public class PlanetGenerator : MonoBehaviour {
                 GameObject.Instantiate(planet3, planetvector, Quaternion.identity);
                 break;
             case 4:
+			GameObject.Instantiate(planet4, planetvector, Quaternion.identity);
                 break;
             case 5:
+			GameObject.Instantiate(planet5, planetvector, Quaternion.identity);
                 break;
         }
     }

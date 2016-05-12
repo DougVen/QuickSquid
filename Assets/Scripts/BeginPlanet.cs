@@ -20,7 +20,7 @@ public class BeginPlanet : MonoBehaviour {
         {
             GameObject.Instantiate(gen);
             select.GetComponent<PlanetGrav>().enabled = true;
-            score.GetComponent<Score>().add = 10;
+            score.GetComponent<Score>().add = 1;
             one = false;
 
         }

@@ -19,7 +19,7 @@ public class LineGenerator : MonoBehaviour {
     {
         planetvector = new Vector3(10,0, 1);
 
-        int rand = Random.Range(1, 5);
+        int rand = Random.Range(1, 6);
       //  squid.GetComponent<Squid>().color
         switch (rand)
         {

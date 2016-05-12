@@ -6,6 +6,7 @@ public class Squid : MonoBehaviour {
 
     // Use this for initialization
     public string color="blue";
+	public GameObject high;
     public Vector3 targetVector,assistantVector;
     public float hp = 3;
     public float verticalSpeedLimit = 5f,
@@ -24,6 +25,7 @@ public class Squid : MonoBehaviour {
 	void Update () {
         if (GetComponent<Transform>().position.x <= -10)
         {
+			//PlayerPrefs.SetInt("High",high.GetComponent<high>());
             over.enabled = true;
             Time.timeScale = 0.0f;
             Object.Destroy(gameObject);
